@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team AGNI – Micro Class | SAE DDC 2024–25</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- model-viewer for 3D GLB file -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- ===== Header ===== -->
+  <header class="bg-white shadow-md py-6">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+      <h1 class="text-2xl font-bold text-blue-700">Aero Club – MACE</h1>
+      <nav class="space-x-6 text-gray-600 font-medium">
+        <a href="#" class="hover:text-blue-600">Home</a>
+        <a href="#" class="hover:text-blue-600">Projects</a>
+        <a href="#" class="hover:text-blue-600">Micro Class</a>
+        <a href="#" class="hover:text-blue-600">Regular Class</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section with 3D Model ===== -->
+  <section class="text-center py-12 bg-gradient-to-b from-blue-50 to-gray-50">
+    <h2 class="text-4xl font-bold mb-2">Micro Class Aircraft – Team AGNI</h2>
+    <p class="text-gray-600 mb-8">
+      SAE Drone Development Competition (DDC) 2024–25<br>
+      Mar Athanasius College of Engineering, Kothamangalam
+    </p>
+
+    <!-- 3D Model Viewer -->
+    <div class="max-w-3xl mx-auto">
+      <!-- 🔹 Replace "team-agni.glb" below with your actual .glb filename or path -->
+      <model-viewer
+        src="team-agni.glb"
+        alt="Team AGNI Micro Class Aircraft"
+        camera-controls
+        auto-rotate
+        rotation-per-second="15deg"
+        ar
+        shadow-intensity="1"
+        exposure="1"
+        class="w-full h-[500px] rounded-2xl shadow-xl bg-white">
+      </model-viewer>
+    </div>
+  </section>
+
+  <!-- ===== Project Details Section ===== -->
+  <section class="py-16 px-6">
+    <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+      <h3 class="text-2xl font-semibold mb-4">Project Overview</h3>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Team <strong>AGNI</strong> represents the <strong>Micro Class</strong> division of the
+        <strong>Aero Club</strong> for the <strong>SAE Drone Development Competition (DDC) 2024–25</strong>.
+        This category emphasizes compact, lightweight aircraft capable of rapid deployment — requiring the
+        model to be fully assembled within 90 seconds and hand-launched by trained personnel.
+      </p>
+
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Our aircraft is a <strong>fixed-wing micro UAV</strong>, engineered for aerodynamic efficiency and
+        modular construction. The project showcases the spirit of innovation, collaboration, and technical
+        excellence within our Aero Club.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">Mission Objective</h3>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        To design, fabricate, and demonstrate a <strong>high-performance micro aircraft</strong> capable of
+        stable hand-launch flight while meeting the defined mission parameters of SAE DDC 2024–25.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">Technical Highlights</h3>
+      <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-6">
+        <li><strong>Aircraft Type:</strong> Fixed-Wing Micro UAV</li>
+        <li><strong>Configuration:</strong> Modular design for tool-less assembly under 90 seconds</li>
+        <li><strong>Material:</strong> Lightweight composites and 3D-printed components</li>
+        <li><strong>Control System:</strong> Optimized for stability and payload endurance</li>
+        <li><strong>Category:</strong> Micro Class | SAE DDC 2024–25</li>
+      </ul>
+
+      <h3 class="text-2xl font-semibold mb-4">About the Team</h3>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        <strong>Team AGNI</strong> comprises passionate engineering students from
+        <strong>Mar Athanasius College of Engineering, Kothamangalam</strong>. 
+        With a deep interest in aeromodelling and UAV innovation, the team exemplifies the Aero Club’s
+        commitment to advancing aerial design and applied engineering.
+      </p>
+
+      <h3 class="text-2xl font-semibold mb-4">Aero Club Legacy</h3>
+      <p class="text-gray-700 leading-relaxed">
+        The <strong>Aero Club of MACE</strong> continues to design and build aircraft for both
+        <strong>Regular</strong> and <strong>Micro Class</strong> categories of the SAE Drone Development Competition.
+        Each project carries forward our tradition of innovation and excellence — and
+        <strong>Team AGNI (2024–25)</strong> proudly adds a new chapter to that legacy.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>© 2024–25 Aero Club – Mar Athanasius College of Engineering, Kothamangalam. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
