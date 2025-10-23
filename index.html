@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Team AGNI – Micro Class | SAE DDC 2024–25</title>
+  <title>Aero Club – MACE</title>
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- model-viewer for 3D Model -->
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <style>
     body { font-family: 'Poppins', sans-serif; }
@@ -37,87 +34,91 @@
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex space-x-6 text-gray-600 font-medium">
         <a href="#" class="hover:text-blue-600">Home</a>
-        <a href="#" class="hover:text-blue-600">Projects</a>
-        <a href="#" class="hover:text-blue-600">Micro Class</a>
-        <a href="#" class="hover:text-blue-600">Regular Class</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#teams" class="hover:text-blue-600">Teams</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
       </nav>
     </div>
 
     <!-- Mobile Menu -->
     <nav id="mobile-menu" class="hidden md:hidden flex flex-col items-center bg-white border-t space-y-3 py-4 text-gray-600 font-medium">
       <a href="#" class="hover:text-blue-600">Home</a>
-      <a href="#" class="hover:text-blue-600">Projects</a>
-      <a href="#" class="hover:text-blue-600">Micro Class</a>
-      <a href="#" class="hover:text-blue-600">Regular Class</a>
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#teams" class="hover:text-blue-600">Teams</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
     </nav>
   </header>
 
   <!-- ===== Hero Section ===== -->
-  <section class="text-center py-12 px-4 bg-gradient-to-b from-blue-50 to-gray-50">
-    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">Micro Class Aircraft – Team AGNI</h2>
-    <p class="text-gray-600 text-sm md:text-base mb-8">
-      SAE Drone Development Competition (DDC) 2024–25<br>
-      Mar Athanasius College of Engineering, Kothamangalam
+  <section class="text-center py-16 px-4 bg-gradient-to-b from-blue-100 to-gray-50">
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-700 mb-4">Aero Club – MACE</h2>
+    <p class="max-w-2xl mx-auto text-gray-700 text-base md:text-lg mb-8">
+      A student-driven aeromodelling and UAV development club at Mar Athanasius College of Engineering, Kothamangalam.
+      Our mission is to innovate, build, and fly — advancing the frontiers of aeronautical design and engineering excellence.
     </p>
+    <a href="#teams" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition">
+      Explore Our Teams
+    </a>
+  </section>
 
-    <div class="max-w-3xl mx-auto">
-      <model-viewer
-        src="team-agni.glb"
-        alt="Team AGNI Micro Class Aircraft"
-        camera-controls
-        auto-rotate
-        rotation-per-second="15deg"
-        ar
-        shadow-intensity="1"
-        exposure="1"
-        class="w-full h-[300px] sm:h-[400px] md:h-[500px] rounded-2xl shadow-xl bg-white">
-      </model-viewer>
+  <!-- ===== About Section ===== -->
+  <section id="about" class="py-12 px-4 sm:px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-2xl sm:text-3xl font-semibold text-blue-700 mb-4">About the Aero Club</h3>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        The **Aero Club of MACE** is a hub for aspiring engineers passionate about flight, aeromodelling, and drone technology.
+        Founded with the vision to integrate theory with hands-on experimentation, the club focuses on designing, fabricating,
+        and testing aircraft for national and international competitions such as the **SAE Drone Development Competition (DDC)**.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        Members gain experience in aircraft aerodynamics, propulsion systems, control algorithms, and lightweight material design.
+        From conceptual sketches to successful flight demonstrations, the Aero Club proudly represents MACE’s technical prowess
+        and innovation in aerial platforms.
+      </p>
     </div>
   </section>
 
-  <!-- ===== Project Details Section ===== -->
-  <section class="py-12 px-4 sm:px-6">
-    <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg p-6 sm:p-8">
-      <h3 class="text-2xl font-semibold mb-4">Project Overview</h3>
-      <p class="text-gray-700 leading-relaxed mb-6">
-        Team <strong>AGNI</strong> represents the <strong>Micro Class</strong> division of the
-        <strong>Aero Club</strong> for the <strong>SAE Drone Development Competition (DDC) 2024–25</strong>.
-        This category emphasizes compact, lightweight aircraft capable of rapid deployment — requiring the
-        model to be fully assembled within 90 seconds and hand-launched by trained personnel.
-      </p>
+  <!-- ===== Teams Section ===== -->
+  <section id="teams" class="py-12 px-4 sm:px-6 bg-blue-50 text-center">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-semibold text-blue-700 mb-8">Our Competition Teams</h3>
 
-      <p class="text-gray-700 leading-relaxed mb-6">
-        Our aircraft is a <strong>fixed-wing micro UAV</strong>, engineered for aerodynamic efficiency and modular construction.
-        The project showcases the spirit of innovation, collaboration, and technical excellence within our Aero Club.
-      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
 
-      <h3 class="text-2xl font-semibold mb-4">Mission Objective</h3>
-      <p class="text-gray-700 leading-relaxed mb-6">
-        To design, fabricate, and demonstrate a <strong>high-performance micro aircraft</strong> capable of stable hand-launch
-        flight while meeting the defined mission parameters of SAE DDC 2024–25.
-      </p>
+        <!-- Regular Class Team -->
+        <div class="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition">
+          <h4 class="text-2xl font-bold text-gray-800 mb-2">Team NOVA – Regular Class</h4>
+          <p class="text-gray-600 text-sm mb-6">
+            Developing high-endurance, payload-optimized UAVs for SAE DDC 2024–25, focusing on aerodynamic stability and flight endurance.
+          </p>
+          <a href="regular.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition">
+            Visit Team NOVA
+          </a>
+        </div>
 
-      <h3 class="text-2xl font-semibold mb-4">Technical Highlights</h3>
-      <ul class="list-disc list-inside text-gray-700 leading-relaxed mb-6">
-        <li><strong>Aircraft Type:</strong> Fixed-Wing Micro UAV</li>
-        <li><strong>Configuration:</strong> Modular design for tool-less assembly under 90 seconds</li>
-        <li><strong>Material:</strong> Lightweight composites and 3D-printed components</li>
-        <li><strong>Control System:</strong> Optimized for stability and payload endurance</li>
-        <li><strong>Category:</strong> Micro Class | SAE DDC 2024–25</li>
-      </ul>
+        <!-- Micro Class Team -->
+        <div class="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition">
+          <h4 class="text-2xl font-bold text-gray-800 mb-2">Team AGNI – Micro Class</h4>
+          <p class="text-gray-600 text-sm mb-6">
+            Building compact micro UAVs designed for efficiency, quick assembly, and precision hand‑launch missions in SAE DDC 2024–25.
+          </p>
+          <a href="micro.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition">
+            Visit Team AGNI
+          </a>
+        </div>
 
-      <h3 class="text-2xl font-semibold mb-4">About the Team</h3>
-      <p class="text-gray-700 leading-relaxed mb-6">
-        <strong>Team AGNI</strong> comprises passionate engineering students from
-        <strong>Mar Athanasius College of Engineering, Kothamangalam</strong>. With a deep interest in aeromodelling and UAV design,
-        the team exemplifies the Aero Club’s commitment to advancing aerial design and applied engineering.
-      </p>
+      </div>
+    </div>
+  </section>
 
-      <h3 class="text-2xl font-semibold mb-4">Aero Club Legacy</h3>
-      <p class="text-gray-700 leading-relaxed">
-        The <strong>Aero Club of MACE</strong> continues to innovate in aircraft development for both
-        <strong>Regular</strong> and <strong>Micro Class</strong> categories of the SAE DDC.
-        <strong>Team AGNI (2024–25)</strong> proudly adds a new chapter to that legacy.
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="py-12 px-4 sm:px-6 text-center">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-semibold text-blue-700 mb-4">Get in Touch</h3>
+      <p class="text-gray-700 mb-6">
+        Interested in joining or collaborating with the Aero Club?<br>
+        Reach out to us at
+        <a href="mailto:aeroclub@mace.ac.in" class="text-blue-600 underline">aeroclub@mace.ac.in</a>
       </p>
     </div>
   </section>
@@ -127,7 +128,7 @@
     <p>© 2024–25 Aero Club – Mar Athanasius College of Engineering, Kothamangalam. All Rights Reserved.</p>
   </footer>
 
-  <!-- ===== Script for Mobile Menu Toggle ===== -->
+  <!-- ===== Mobile Menu Script ===== -->
   <script>
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
